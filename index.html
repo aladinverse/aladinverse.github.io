@@ -1,31 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>aladinverse</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(circle at top, #111827, #0A0F1C 70%);
+    color: white;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.menu a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+}
+
+.menu a:hover {
+    color: #38BDF8;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 140px 20px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #38BDF8, #60A5FA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+/* SECTION */
+.section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.card {
+    background: #111827;
+    padding: 30px;
+    border-radius: 16px;
+    margin-top: 30px;
+    border: 1px solid rgba(56,189,248,0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #38BDF8;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px;
+    opacity: 0.5;
+}
+</style>
+</head>
+
 <body>
 
-<div class="geo-system">
-
-    <div class="center-core">
-        <h1>ALADINVERSE</h1>
-        <p>Spatial Intelligence • WebGIS • Digital Systems</p>
+<nav>
+    <div class="logo">ALADINVERSE</div>
+    <div class="menu">
+        <a href="#">Experiments</a>
+        <a href="#">Projects</a>
+        <a href="#">Logs</a>
     </div>
+</nav>
 
-    <a href="webgis/" class="geo-node node-webgis">
-        WebGIS Experiments
-    </a>
-
-    <a href="systems/" class="geo-node node-systems">
-        Digital Systems
-    </a>
-
-    <a href="logs/" class="geo-node node-logs">
-        Exploration Logs
-    </a>
-
-    <svg class="connections">
-        <line x1="50%" y1="50%" x2="25%" y2="30%" />
-        <line x1="50%" y1="50%" x2="75%" y2="65%" />
-        <line x1="50%" y1="50%" x2="70%" y2="20%" />
-    </svg>
-
+<div class="hero">
+    <h1>Welcome to My Universe</h1>
+    <p>A personal experimental space for code, spatial systems, and digital exploration.</p>
 </div>
 
-<script src="js/main.js"></script>
+<div class="section">
+    <div class="card">
+        <h3>🚀 WebGIS Experiments</h3>
+        <p>Testing spatial visualization, mapping systems, and interactive geospatial tools.</p>
+    </div>
+
+    <div class="card">
+        <h3>🧠 Digital Systems</h3>
+        <p>Automation, dashboards, data pipelines, and experimental digital twin concepts.</p>
+    </div>
+
+    <div class="card">
+        <h3>📓 Exploration Logs</h3>
+        <p>Notes, learnings, and technical reflections from ongoing experiments.</p>
+    </div>
+</div>
+
+<footer>
+    © 2026 aladinverse
+</footer>
+
 </body>
+</html>
