@@ -1,70 +1,31 @@
+.card {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
 body {
-  margin: 0;
-  height: 100vh;
-  background-color: #0a0f14;
-  background-image:
-    linear-gradient(rgba(0,200,255,0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0,200,255,0.05) 1px, transparent 1px);
-  background-size: 60px 60px;
-  font-family: "Segoe UI", sans-serif;
-  overflow: hidden;
-  color: white;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0A0F1C;
+    background-image:
+        linear-gradient(rgba(56,189,248,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(56,189,248,0.05) 1px, transparent 1px);
+    background-size: 60px 60px;
+    color: white;
 }
 
-.geo-system {
-  position: relative;
-  width: 100%;
-  height: 100%;
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
 }
 
-.center-core {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #00c8ff;
-}
-
-.center-core h1 {
-  letter-spacing: 6px;
-  font-weight: 600;
-}
-
-.center-core p {
-  font-size: 0.85rem;
-  opacity: 0.7;
-  letter-spacing: 2px;
-}
-
-.geo-node {
-  position: absolute;
-  padding: 12px 18px;
-  border: 1px solid rgba(0,200,255,0.5);
-  border-radius: 4px;
-  text-decoration: none;
-  color: white;
-  background: rgba(0,200,255,0.05);
-  transition: 0.3s ease;
-  font-size: 0.85rem;
-}
-
-.geo-node:hover {
-  background: rgba(0,200,255,0.2);
-  transform: scale(1.05);
-}
-
-.node-webgis { top: 30%; left: 25%; }
-.node-systems { top: 65%; left: 75%; }
-.node-logs { top: 20%; left: 70%; }
-
-.connections {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.connections line {
-  stroke: rgba(0,200,255,0.2);
-  stroke-width: 1;
+.hero::after {
+    content: "Lat: -6.2000 | Long: 106.8166";
+    display: block;
+    margin-top: 20px;
+    font-size: 12px;
+    opacity: 0.4;
+    letter-spacing: 2px;
 }
