@@ -1,86 +1,53 @@
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: radial-gradient(circle at center, #111827 0%, #05070f 70%);
-    color: white;
-    overflow: hidden;
+  margin: 0;
+  height: 100vh;
+  background-color: #0a0f14;
+  background-image: 
+    linear-gradient(rgba(0, 200, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 200, 255, 0.06) 1px, transparent 1px);
+  background-size: 60px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: "Segoe UI", sans-serif;
 }
 
-.universe {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
+-- Crosshair
+body::before,
+body::after {
+  content: "";
+  position: absolute;
+  background: rgba(0, 200, 255, 0.2);
 }
 
-.center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+body::before {
+  width: 1px;
+  height: 100%;
+  left: 50%;
+  top: 0;
 }
 
-.center h1 {
-    font-size: 2.5rem;
-    letter-spacing: 4px;
+body::after {
+  height: 1px;
+  width: 100%;
+  top: 50%;
+  left: 0;
 }
 
-.center p {
-    opacity: 0.6;
-    font-size: 0.9rem;
+-- Typography
+
+.center-text h1 {
+  font-size: 2.2rem;
+  letter-spacing: 6px;
+  font-weight: 600;
+  color: #00c8ff;
 }
 
-.orbit {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 50%;
-    animation: rotate 40s linear infinite;
-}
-
-.orbit-1 {
-    width: 300px;
-    height: 300px;
-    margin: -150px;
-}
-
-.orbit-2 {
-    width: 450px;
-    height: 450px;
-    margin: -225px;
-    animation-duration: 60s;
-}
-
-.orbit-3 {
-    width: 600px;
-    height: 600px;
-    margin: -300px;
-    animation-duration: 80s;
-}
-
-.planet {
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    transform: translate(-50%, -50%);
-    background: rgba(255,255,255,0.05);
-    padding: 12px 18px;
-    border-radius: 20px;
-    text-decoration: none;
-    color: white;
-    font-size: 0.8rem;
-    text-align: center;
-    backdrop-filter: blur(5px);
-    transition: 0.3s;
-}
-
-.planet:hover {
-    background: rgba(255,255,255,0.15);
-    transform: translate(-50%, -50%) scale(1.1);
-}
-
-@keyframes rotate {
-    from { transform: translate(-50%, -50%) rotate(0deg); }
-    to { transform: translate(-50%, -50%) rotate(360deg); }
+.center-text p {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  margin-top: 8px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
